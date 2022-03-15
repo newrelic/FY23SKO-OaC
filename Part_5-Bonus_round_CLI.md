@@ -4,15 +4,17 @@ The New Relic is a great way to do some common actions on the New Relic platform
 
 For more information about our CLI check out the documentation: https://developer.newrelic.com/explore-docs/newrelic-cli/
 
-Below is a list of use-cases you will be able to solve with the CLI. We want you to create an example command for each and add it to this Google form. We will check each of the commands, and the person with the most correct answers will get some exclusive swag.
+Below is a list of use-cases you will be able to solve with the CLI. We want you to create an example command for each and add it to [this Google form](https://forms.gle/1K5SL2WGsrko8xxD9). We will check each of the commands, and the person with the most correct answers will get some exclusive swag.
+
+Google form: https://forms.gle/1K5SL2WGsrko8xxD9
 
 ## Use-cases
 
-1) Add a deployment marker for an application
+1) Add a deployment marker for an application (APM)
 
-2) Get list of all deployment markers for an application
+2) Get list of all deployment markers for an application (APM)
 
-3) Troubleshoot a New Relic installation
+3) Troubleshoot a New Relic installation (Infrastructure)
 
 4) Get list of tags for a New Relic entity
 
@@ -26,4 +28,4 @@ Below is a list of use-cases you will be able to solve with the CLI. We want you
 
 9) Convert a dashboard json to Terraform HCL
 
-10) (Very difficult) Get a dashboard from New Relic, and give the titles of all the widgets
+10) (Very difficult) Get a dashboard from New Relic, and give the titles of all the widgets using ONLY the CLI
