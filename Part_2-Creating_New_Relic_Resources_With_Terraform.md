@@ -295,9 +295,9 @@ The `name` and `uri` attributes use `count.index` to reference the elements of t
 
 
 ## Step 8: Wrapping Up
-In this exercise you learnt how to setup New Relic resources using the terraform provider. You know where to find the documentation and how to use it and the examples to construct your terraform code. Hopefully you can see how generating resources from simple configuration is also possible. Not only can you generate multiple copies of a single resource but you can also call entire modules that generate multiple sub resources. *Creating three or three hundred ping monitors is almost as easy as creating one!*
+In this exercise you learned how to setup New Relic resources using the terraform provider. You know where to find the documentation and how to use it and the examples to construct your terraform code. Hopefully you can see how generating resources from simple configuration is also possible. Not only can you generate multiple copies of a single resource but you can also call entire modules that generate multiple sub resources. *Creating three or three hundred ping monitors is almost as easy as creating one!*
 
-You can now go on and apply what you have learnt to create synthetic journeys, dashboards, workloads and all manner of other New Relic resources that are supported by the provider.
+You can now go on and apply what you have learned to create synthetic journeys, dashboards, workloads and all manner of other New Relic resources that are supported by the provider.
 
 If you wish to tear down the resources you created in your New Relic account run the **destroy** command. This will delete all the resources managed by terraform in this exercise in one go. You can try this now:
 
