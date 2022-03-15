@@ -45,7 +45,7 @@ resource "aws_instance" "web" {
 }
 ```
 
-Once you copied the code into the `aws-ec2.tf` file and saved. Run `terraform apply` to spin up your EC2 instance.
+Once you copied the code into the `aws-ec2.tf` file and saved it. Run `terraform apply` to spin up your EC2 instance.
 
 You will get a long output that looks something like this:
 
@@ -173,7 +173,7 @@ resource "aws_instance" "web" {
 }
 ```
 
-Once you copied the code into the `aws-ec2.tf` file and saved. Run `terraform apply` to update your EC2 instance with the new network configuration. While you wait for the command to finish take a look at all the changes you did, and try to find it why we're doing these changes.
+Once you copied the code into the `aws-ec2.tf` file and saved it. Run `terraform apply` to update your EC2 instance with the new network configuration. While you wait for the command to finish take a look at all the changes you did, and try to find out what they're doing.
 
 The output after confirming the change (`Enter a value: yes`) should look something like this:
 
