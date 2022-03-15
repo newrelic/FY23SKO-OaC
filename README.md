@@ -47,7 +47,7 @@ git version 2.34.1
 
 ## Getting Started
 
-Clone this repository to your local machine either through Git `git clone https://github.com/kidk/FY23SKO-OaC.git`, or using the following link: [Download repository](https://github.com/kidk/FY23SKO-OaC/archive/refs/heads/main.zip)
+Clone this repository to your local machine either through Git `git clone https://github.com/newrelic/FY23SKO-OaC.git`, or using the following link: [Download repository](https://github.com/newrelic/FY23SKO-OaC/archive/refs/heads/main.zip)
 
 * Part 1: [Setting up Terraform](./Part_1-Setting_up_Terraform.md)
 * Part 2: [Creating New Relic Resources with Terraform](./Part_2-Creating_New_Relic_Resources_With_Terraform.md)

@@ -2,7 +2,7 @@
 
 ## Download files locally
 
-If you haven't already make sure to download all the files locally. You can do that by cloning this repository to your local machine either through Git `git clone https://github.com/kidk/FY23SKO-OaC.git`, or using the following link: [Download repository](https://github.com/kidk/FY23SKO-OaC/archive/refs/heads/main.zip)
+If you haven't already make sure to download all the files locally. You can do that by cloning this repository to your local machine either through Git `git clone https://github.com/newrelic/FY23SKO-OaC.git`, or using the following link: [Download repository](https://github.com/newrelic/FY23SKO-OaC/archive/refs/heads/main.zip)
 
 ## Configure Terraform
 
