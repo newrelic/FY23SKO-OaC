@@ -229,7 +229,7 @@ https://insights-collector.eu01.nr-data.net/v1/accounts/ACCOUNT-ID-HERE/events \
 ]'
 ```
 
-Ensure you get a response like this with **"success:true"** in it. If not double check you;ve included an ingest key (not a user key!) and your account ID in the correct places:
+Ensure you get a response like this with **`"success:true"`** in it. If not double check you've included an ingest key (not a user key!) and your account ID in the correct places:
 ```json
 {"success":true, "uuid":"0b92fafc-0001-b000-0000-017f277bfc27"}
 ```
