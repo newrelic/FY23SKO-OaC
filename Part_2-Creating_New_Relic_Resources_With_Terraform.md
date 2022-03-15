@@ -71,7 +71,7 @@ Go to you New Relic One account and navigate to the Alerts secition and then sel
 ## Step 3: Add an NRQL Condition to the policy
 An alert policy with no conditions is not very useful. You need to add an alert condition to the policy your created above. To do this we will use the documentation to find the resource we need and utilise the examples to configure it.
 
-> Its important to understand where to find the documentation and how to use it, so this entire exercise will require you to find the examples in the documenation and and use them in your code.
+> It's important to understand where to find the right documentation and how to use it, so this entire exercise will require you to find examples in online documentation and use them in your code.
 
 Start by finding the New Relic Terraform Provider documentation. Open up your favourite search engine and search for **"new relic terraform provider"**, with any luck the first result will take you to our [New Relic Terraform Provider docs](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs).
 
