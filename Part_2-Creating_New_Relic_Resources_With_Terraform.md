@@ -291,7 +291,7 @@ Run `terraform apply` and confirm that you can see all three synthetic monitors 
 ### Whoa! What happened here?
 Providing a [count](https://www.terraform.io/language/meta-arguments/count) attribute to a resource instructs terraform to generate multiple copies of that resource. You specify how many resources you want, in this case the length of the array `local.pingURLs`, which is three.
 
-The `name` and `uri` attributes use `count.index` to reference the elements of the array. For `name` we need use interpolation `${...}` syntax to include the variable within the string. For the `uri` we dont need that interpolation syntax as we're using the value directly.
+The `name` and `uri` attributes use `count.index` to reference the elements of the array. For `name` we need to use interpolation `${...}` syntax to include the variable within the string. For the `uri` we don't need that interpolation syntax as we're using the value directly.
 
 
 ## Step 8: Wrapping Up
