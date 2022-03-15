@@ -1,0 +1,5 @@
+.terraform*
+configuration.sh
+terraform.*
+aws.ec2.tf
+ansible/newrelic-playbook.yml

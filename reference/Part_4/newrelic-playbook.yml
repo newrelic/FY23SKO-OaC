@@ -1,0 +1,17 @@
+---
+- name: Deploy New Relic infrastructure
+  hosts: all
+  become: yes
+  tasks:
+    - name: create a file in home directory
+      copy:
+        dest: "/home/ubuntu/hello"
+        content: |
+          Hi :D
+          You've just created your first file through Ansible
+          * dance party gif *
+  roles:
+    - role: newrelic.newrelic-infra
+      vars:
+        nrinfragent_config:
+          license_key: your_super_secret_license_key
