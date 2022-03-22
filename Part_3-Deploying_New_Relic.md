@@ -13,7 +13,7 @@ If you get stuck then refer to the [reference example](./reference/Part_4/aws-ec
 
 ## Spin up an EC2 instance
 
-1) Let's first create a file to put your configuration for the EC2 instance. Terraform allows you to make as many files ending with `.tf` as you want, it will automatically pick them up when running `terraform apply` or `terraform plan`. This is a great way to structure your Terraform configuration.
+1) Let's first create a file in the root directory (where `providers.tf` is located) to put your configuration for the EC2 instance. Terraform allows you to make as many files ending with `.tf` as you want, it will automatically pick them up when running `terraform apply` or `terraform plan`. This is a great way to structure your Terraform configuration.
 
 Use your favorite editor to create the following file `aws-ec2.tf`.
 
@@ -364,5 +364,7 @@ PLAY RECAP *********************************************************************
 ```
 
 If it succeeds without any errors you've just installed New Relic infrastructure fully automated. Imagine if you had to write all these steps yourself, or do it all manually. Now everytime you have a new host you just need to add it to the 'hosts` files, and Ansible takes care of the rest.
+
+# That's it
 
 You can now proceed to [Part 4 - Enable Cloud integrations](./Part_4-Enabling_cloud_integrations.md)
