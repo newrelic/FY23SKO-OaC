@@ -67,6 +67,8 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Go to you New Relic One account and navigate to the Alerts secition and then select **"Alert conditions (Policies)"** and you should find your new alert policy called "**YOUR_USERNAME** terraform alert policy". If it's there then well done, you've created your first New Relic resource via terraform!
 
+> If you don't see your policy then double check your API keys, account number and configuration. If necessary compare to the [reference](./reference/Part_2/newrelic.tf) example.
+
 
 ## Step 3: Add an NRQL Condition to the policy
 An alert policy with no conditions is not very useful. You need to add an alert condition to the policy your created above. To do this we will use the documentation to find the resource we need and utilise the examples to configure it.
@@ -158,8 +160,8 @@ As with the previous task you'll use this example code as a basis for your own a
 
 1. Change the resource name from "foo" to "sko_slack" (note the underscore here!)
 2. `name`: Set this to the value "**YOUR_USERNAME** SKO Slack Channel" - this is the name that will appear in the New Relic One
-3. `config.url` Set this to: `HOOK VALUE SUPPLIED DURING SESSION`
-4. `config.channel` Set this to `fy23sko-oac-session`
+3. `config.url`: Set this to the URL of the Slack webhook found in the [session credentials document](https://bit.ly/oac-fy23).
+4. `config.channel`: Set this to `fy23sko-oac-session`
 
 Run `terraform apply` and observe the notification channel has been created by viewing it in New Relic One.
 
