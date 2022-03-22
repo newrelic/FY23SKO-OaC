@@ -2,15 +2,6 @@ variable "NEW_RELIC_ACCOUNT_ID" {
   type = string
 }
 
-// We generate a random string for use in a couple of resources so you don't have collisions with other users
-resource "random_string" "user" {
-  length  = 6
-  upper   = false
-  lower   = true
-  number  = true
-  special = false
-}
-
 data "aws_iam_policy_document" "newrelic_assume_policy" {
   statement {
     actions = ["sts:AssumeRole"]
@@ -29,13 +20,13 @@ data "aws_iam_policy_document" "newrelic_assume_policy" {
 }
 
 resource "aws_iam_role" "newrelic_aws_role" {
-  name               = "NewRelicInfrastructure-Integrations-${random_string.user.result}"
+  name               = "NewRelicInfrastructure-Integrations"
   description        = "New Relic Cloud integration role"
   assume_role_policy = data.aws_iam_policy_document.newrelic_assume_policy.json
 }
 
 resource "aws_iam_policy" "newrelic_aws_permissions" {
-  name        = "NewRelicCloudStreamReadPermissions-${random_string.user.result}"
+  name        = "NewRelicCloudStreamReadPermissions"
   description = ""
   policy      = <<EOF
 {
@@ -82,7 +73,7 @@ resource "aws_iam_role_policy_attachment" "newrelic_aws_policy_attach" {
 resource "newrelic_cloud_aws_link_account" "newrelic_cloud_integration" {
   arn = aws_iam_role.newrelic_aws_role.arn
   metric_collection_mode = "PUSH"
-  name = "production-${random_string.user.result}"
+  name = "production"
   depends_on = [aws_iam_role_policy_attachment.newrelic_aws_policy_attach]
 }
 
@@ -115,7 +106,7 @@ EOF
 }
 
 resource "aws_s3_bucket" "newrelic_aws_bucket" {
-  bucket = "newrelic-aws-bucket-${random_string.user.result}"
+  bucket = "newrelic-aws-bucket"
 }
 
 resource "aws_s3_bucket_acl" "newrelic_aws_bucket_acl" {
