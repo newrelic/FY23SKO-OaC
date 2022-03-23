@@ -40,6 +40,6 @@ provider "aws" {
     region = var.AWS_REGION
 }
 
-# Go back to the `Part_1-Setting_up_an_AWS_EC2_instance.md` readme
+# Go back to the `Part_1-Setting_up_Terraform.md` readme
 # once you think you're done with this file and learn how to set up your
 # authentication credentials
