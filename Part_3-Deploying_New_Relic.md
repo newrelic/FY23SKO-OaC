@@ -262,8 +262,8 @@ Open `hosts/production` to add the IP address of your server that you created th
 
 ```
 # Add the IP address of your server here
-# example: 192.168.1.1 ansible_user=ubuntu
-44.201.195.165 ansible_user=ubuntu
+# example: 192.168.1.1 ansible_user=ubuntu ansible_python_interpreter=/usr/bin/python3
+44.201.195.165 ansible_user=ubuntu ansible_python_interpreter=/usr/bin/python3
 ```
 
 You can test if everything was setup correctly by running the following command: `ansible --private-key=~/.ssh/skofy23.pem all -i hosts/ -m ping` This pings all the hosts to make sure we're able to access them.
