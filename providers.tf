@@ -25,6 +25,12 @@ terraform {
             source  = "hashicorp/aws"
             version = "~> 4.5"
         }
+
+        # Terraform also provides some handy providers, this one we use to generate random strings
+        random = {
+            source  = "hashicorp/random"
+            version = "~> 3.1"
+        }
     }
 }
 
