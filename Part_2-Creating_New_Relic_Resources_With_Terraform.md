@@ -160,7 +160,7 @@ As with the previous task you'll use this example code as a basis for your own a
 
 1. Change the resource name from "foo" to "sko_slack" (note the underscore here!)
 2. `name`: Set this to the value "**YOUR_USERNAME** SKO Slack Channel" - this is the name that will appear in the New Relic One
-3. `config.url`: Set this to the URL of the Slack webhook found in the [session credentials document](https://bit.ly/oac-fy23).
+3. `config.url`: Set this to the URL of the Slack webhook found in the [session credentials document](bit.ly/oac-sko-fy23).
 4. `config.channel`: Set this to `fy23sko-oac-session`
 
 Run `terraform apply` and observe the notification channel has been created by viewing it in New Relic One.
