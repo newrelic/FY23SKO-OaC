@@ -6,7 +6,7 @@ Pre-requisites:
 
 1. A text editor such as VS Code
 2. A New Relic account that you can create Ingest API tokens for
-3. AWS Authentication tokens (The SKO team will provide these for you)
+3. AWS Authentication tokens (Find these in the [session credentials document](https://bit.ly/oac-sko-fy23))
 
 If you get stuck then refer to the [reference example](./reference/Part_4/aws-ec2.tf), but try to peek at that only as a last resort once you have tried fixing you own code ;)
 
