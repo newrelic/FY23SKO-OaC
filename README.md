@@ -8,9 +8,9 @@ This repository contains all the instructions and files needed to get a first in
 
 * Laptop with Mac OS X. Windows is not supported for this workshop
 * [Homebrew](https://brew.sh/)
-* Apple Command Line Tools: `xcode-select --install`
 * [Visual Studio Code](https://code.visualstudio.com/) or another code editor
 * Terraform / Ansible / New Relic CLI / Git: `brew install terraform ansible newrelic-cli git`
+* (Optional, if needed) Apple Command Line Tools: `xcode-select --install`
 
 You can check if everything is installed correctly by running the following commands:
 
