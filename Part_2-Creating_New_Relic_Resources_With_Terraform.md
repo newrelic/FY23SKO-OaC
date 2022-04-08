@@ -77,7 +77,7 @@ An alert policy with no conditions is not very useful. You need to add an alert 
 
 Start by finding the New Relic Terraform Provider documentation. Open up your favourite search engine and search for **"new relic terraform provider"**, with any luck the first result will take you to our [New Relic Terraform Provider docs](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs).
 
-In the "resources" section find the **"newrelic_nrql_alert_condition"** resource documentation. (Can't find it? Try [here](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs/resources/alert_condition)) There are plenty of examples in the documentation that you can copy and paste and then amend. Notice in the **first example** there are two resources, the **"new_relic_alert_policy"** resource which you have already got in your project and the **"newrelic_nrql_alert_condition"** resource.
+In the "resources" section find the **"newrelic_nrql_alert_condition"** resource documentation. (Can't find it? Try [here](https://registry.terraform.io/providers/newrelic/newrelic/latest/docs/resources/nrql_alert_condition)) There are plenty of examples in the documentation that you can copy and paste and then amend. Notice in the **first example** there are two resources, the **"new_relic_alert_policy"** resource which you have already got in your project and the **"newrelic_nrql_alert_condition"** resource.
 
 Copy and paste *just* the larger **"newrelic_nrql_alert_condition"** configuration block from the **first example**  into `newrelic.tf` under the resource we added earlier.
 
