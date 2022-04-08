@@ -142,7 +142,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Check in New Relic One that the condition has indeed been created.
 
-> What did this all do? It created an NRQL alert condition that will fire if the count of records in tfdemo event is non-zero. Once you've applied the configuration take a look at the settings of the condition within the New Relic One to understand it better.
+> What did this all do? It created an NRQL alert condition that will fire if the count of records in tfdemo event is non-zero. Once you've applied the configuration take a look at the settings of the condition within New Relic One to understand it better.
 
 
 ## Step 4: Add a notification channel
@@ -159,9 +159,9 @@ resource "newrelic_alert_channel" "foo" {
 As with the previous task you'll use this example code as a basis for your own and make changes accordingly. Update as follows:
 
 1. Change the resource name from "foo" to "sko_slack" (note the underscore here!)
-2. `name`: Set this to the value "**YOUR_USERNAME** SKO Slack Channel" - this is the name that will appear in the New Relic One
+2. `name`: Set this to the value "**YOUR_USERNAME** SKO Slack Channel" - this is the name that will appear in New Relic One
 3. `config.url`: Set this to the URL of the Slack webhook found in the [session credentials document](https://bit.ly/oac-sko-fy23).
-4. `config.channel`: Set this to `fy23sko-oac-session`
+4. `config.channel`: Set this to `"fy23sko-oac-session"`
 
 Run `terraform apply` and observe the notification channel has been created by viewing it in New Relic One.
 
