@@ -164,7 +164,7 @@ resource "newrelic_alert_channel" "foo" {
 As with the previous task you'll use this example code as a basis for your own and make changes accordingly. Update as follows:
 
 1. Change the resource name from "foo" to "sko_slack" (note the underscore here!)
-2. `name`: Set this to the value "**YOUR_USERNAME** SKO Slack Channel" - this is the name that will appear in New Relic One
+2. `name`: Set this to the value `YOUR_USERNAME** SKO Slack Channel` - this is the name that will appear in New Relic One
 3. `config.url`: Set this to the URL of the Slack webhook found in the [session credentials document](https://bit.ly/oac-sko-fy23).
 4. `config.channel`: Set this to `"fy23sko-oac-session"`
 
