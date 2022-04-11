@@ -24,7 +24,7 @@ resource "newrelic_alert_policy" "policy" {
 }
 ```
 
-Now `source` the configuration file  if you havent already done so (you only need to do this once) and then run the terraform plan to see what changes are suggested.
+Now `source` the configuration file  if you havent already done so (you only need to do this once) and then run the `terraform plan` to see what changes are suggested.
 
 ```bash
 source ./configuration.sh
