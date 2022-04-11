@@ -282,3 +282,7 @@ resource "aws_cloudwatch_metric_stream" "newrelic_metric_stream" {
 ## That's it
 
 You can now proceed to [Part 5 - New Relic CLI](./Part_5-Bonus_round_CLI.md)
+
+## Full example
+
+We've added a complete example of the code above, including the extra integrations on the Terraform documentation: https://registry.terraform.io/providers/newrelic/newrelic/latest/docs/guides/cloud_integrations_guide
