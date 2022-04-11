@@ -227,7 +227,7 @@ EOF
 
 ### Cloudwatch metric stream
 
-The last piece of the puzzel is sending the Cloudwatch metrics through pipeline. In this case we create an `aws_iam_role` for Cloudwatch to send data to firehose, and for the firehose to allow data from Cloudwatch. As a last step we configure the `aws_cloudwatch_metric_stream` to start sending metrics.
+The last piece of the puzzle is sending the Cloudwatch metrics through pipeline. In this case we create an `aws_iam_role` for Cloudwatch to send data to firehose, and for the firehose to allow data from Cloudwatch. As a last step we configure the `aws_cloudwatch_metric_stream` to start sending metrics.
 
 ```
 resource "aws_iam_role" "metric_stream_to_firehose" {
