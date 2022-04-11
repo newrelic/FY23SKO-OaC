@@ -334,7 +334,7 @@ roles:
           license_key: your_super_secret_license_key
 ```
 
-You might need to play with the indentation a bit, the `roles` section should be at the same level as `tasks`. If you get stuck, you can check out [the example file](./reference/Part_4/newrelic-playbook.yml).
+You might need to play with the indentation a bit, the `roles` section should be at the same level as `tasks`. If you get stuck, you can check out [the example file](./reference/Part_3/newrelic-playbook.yml).
 
 One change you need to do before you apply this is to change the `license_key` from `your_super_secret_license_key` to the license key for your New Relic account. This is the New Relic license key you can find on https://one.newrelic.com/api-keys
 
