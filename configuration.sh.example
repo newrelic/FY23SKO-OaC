@@ -13,7 +13,7 @@ export NEW_RELIC_ACCOUNT_ID=""
 
 #
 # AWS credentials
-# These credential will be shared with you by the SKO team
+# Use the credential shared by the SKO team here: https://bit.ly/oac-sko-fy23
 #
 export AWS_ACCESS_KEY_ID=""
 export AWS_SECRET_ACCESS_KEY=""
