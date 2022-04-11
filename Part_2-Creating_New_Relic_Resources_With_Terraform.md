@@ -183,7 +183,7 @@ resource "newrelic_alert_policy_channel" "foo" {
 
 Same as above you will need update the example to suit your needs:
 
-1. Change the name of the resource from "foo" to "subscribe"
+1. Change the name of the resource from `foo` to `subscribe`
 2. `policy_id`: This is where you identify the policy you're adding the channel to, in this case you need to reference the policy you created abiove. Set the value to: `newrelic_alert_policy.policy.id`
 3. The `channel_ids` attribute is a list of channels IDs. You only have one channel, so set the value to reference your single channel like this: `[newrelic_alert_channel.sko_slack.id]`
 
