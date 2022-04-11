@@ -258,7 +258,7 @@ resource "newrelic_synthetics_monitor" "foo" {
 
 Make the following changes to the example:
 
-1. Change the name of the resource from **"foo"** to **"ping"**
+1. Change the name of the resource from `foo` to `ping`
 2. `name`: set this attribute to `"SKO Ping New Relic"`
 3. `locations`: Two locations is a bit much for this exercise, so change the value to target a single location: `["AWS_US_EAST_1"]`
 4. `uri`: Set this to `"https://newrelic.com/"`
