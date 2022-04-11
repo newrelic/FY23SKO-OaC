@@ -282,7 +282,7 @@ You now have confirmation that Ansible can connect to the host. As you can imagi
 
 2) Create an Ansible playbook
 
-Ansible playbooks are the actions Ansible will execute on the hosts. Let's create a file called `newrelic-playbook.yml` and add the following content.
+Ansible playbooks are the actions Ansible will execute on the hosts. Let's create a file called `newrelic-playbook.yml` in the `ansible` folder and add the following content.
 
 ```
 ---
