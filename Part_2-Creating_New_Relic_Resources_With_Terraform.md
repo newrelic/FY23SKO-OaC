@@ -16,7 +16,10 @@ You should already have the [providers.tf](./providers.tf) and [configuration.sh
 ## Step 2: Lights on the board
 Your first step is to make sure that everything is configured correctly. You'll create an alert policy in the your test New Relic account and confirm it appears.
 
-Create a new file called `newrelic.tf`  and add the following code, **remembering to change YOUR_USERNAME to your New Relic user name!**:
+Create a new file called `newrelic.tf`  and add the following code:
+
+> **Remember to change YOUR_USERNAME to your New Relic user name** (e.g. 'jbuchanan alert policy')
+
 ```terraform
 resource "newrelic_alert_policy" "policy" {
   name = "YOUR_USERNAME alert policy"
@@ -44,7 +47,7 @@ Terraform will perform the following actions:
       + account_id          = (known after apply)
       + id                  = (known after apply)
       + incident_preference = "PER_POLICY"
-      + name                = "jbuchanan terraform alert policy"
+      + name                = "jbuchanan alert policy"
     }
 
 Plan: 1 to add, 0 to change, 0 to destroy.
