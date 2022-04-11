@@ -241,6 +241,7 @@ Ensure you get a response like this with **`"success:true"`** in it. If not doub
 {"success":true, "uuid":"0b92fafc-0001-b000-0000-017f277bfc27"}
 ```
 
+> After a minute or two you should see your alert raise a critical incident, and with luck we'll get a notificaiton in our Slack channel. Will you win the prize for raising the first alert?
 
 ## Step 7: Dynamically generated resources
 So far you have created single resources. One of terraform's super powers is its ability to generate multiple resources automatically. In this step you will generate multiple synthetic ping monitors.
