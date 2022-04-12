@@ -1,5 +1,6 @@
 .terraform*
 configuration.sh
+configuration.ps1
 terraform.*
 aws.ec2.tf
 ansible/newrelic-playbook.yml

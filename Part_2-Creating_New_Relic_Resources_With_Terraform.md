@@ -236,6 +236,17 @@ https://insights-collector.eu01.nr-data.net/v1/accounts/ACCOUNT-ID-HERE/events \
 ]'
 ```
 
+For PowerShell users, use this command, change to `$EU_DC` for the **EU** datacentre.
+```powershell
+$INGEST_KEY="NRAK-XXXXXXXXXXXXXXXXXXXXXXXXXXX"
+$ACCOUNT_ID="XXXXXXXX"
+$US_DC="https://insights-collector.newrelic.com"
+$EU_DC="https://insights-collector.eu01.nr-data.net"
+$body = '[{"eventType":"tfdemo","apples":1}]'
+
+Invoke-WebRequest -Uri $US_DC/v1/accounts/$ACCOUNT_ID/events -Method POST -Headers @{"Api-Key"=$INGEST_KEY} -ContentType "application/json" -Body $body
+```
+
 Ensure you get a response like this with **`"success:true"`** in it. If not double check you've included an ingest key (not a user key!) and your account ID in the correct places:
 ```json
 {"success":true, "uuid":"0b92fafc-0001-b000-0000-017f277bfc27"}
