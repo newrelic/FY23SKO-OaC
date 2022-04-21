@@ -1,0 +1,24 @@
+# New Relic credentials
+#
+# Create a User Key for your New Relic account
+# and add it here with your account ID:
+# https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/#user-api-key
+#
+
+$env:NEW_RELIC_API_KEY="NRAK-XXXXXXXXXXXXXXXXXXXXXXXXXXX"
+$env:NEW_RELIC_REGION="US" # or EU
+$env:NEW_RELIC_ACCOUNT_ID=""
+
+#
+# AWS credentials
+# Use the credential shared by the SKO team here: https://bit.ly/oac-sko-fy23
+#
+$env:AWS_ACCESS_KEY_ID=""
+$env:AWS_SECRET_ACCESS_KEY=""
+
+#
+# Don't change this
+#
+$env:TF_VAR_NEW_RELIC_CHECK_ACCOUNT_ID="$env:NEW_RELIC_ACCOUNT_ID"
+$env:TF_VAR_NEW_RELIC_ACCOUNT_ID="$env:NEW_RELIC_ACCOUNT_ID"
+Write-Output "Your New Relic Account ID is $env:NEW_RELIC_ACCOUNT_ID"
